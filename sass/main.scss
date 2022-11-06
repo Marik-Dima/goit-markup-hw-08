@@ -1,0 +1,38 @@
+
+// змінні
+@import'./utils/variables';
+//нормалізація
+@import'./base/normalize';
+//шрифти
+@import'./base/fonts';
+//боді
+@import'./components/common/body';
+//плейсхолдери кнопка, хованка, чистка списку
+@import'./utils/placeholders';
+// загальний опис секції
+@import'./utils/section';
+// контейнер
+@import'./utils/container';
+//хедер та навігація
+@import'./components/common/header';
+// лого
+@import'./components/common/logo';
+//cекція головна ідея
+@import'./components/studio/hero';
+//модальне вікно - замовлення послуги
+@import'./components/studio/order-window';
+//секція інструменти
+@import'./components/common/card-set';
+@import'./components/studio/instrument';
+//секція чим ми займаємось
+@import'./components/studio/proposal';
+//команда
+@import'./components/studio/team';
+//соціальні мережі
+@import'./components/common/socials';
+//постійні клієнти
+@import'./components/studio/customer';
+//приклади робіт
+@import'./components/portfolio/examples';
+//футер
+@import'./components/common/footer';
