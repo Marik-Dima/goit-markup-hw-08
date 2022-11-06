@@ -385,7 +385,6 @@ body {
   letter-spacing: 0.03em;
 }
 .container {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -523,6 +522,7 @@ body {
   color: #ffffff;
   margin-right: 0;
   padding: 0;
+  text-align: center;
 }
 
 .hero {
@@ -832,12 +832,6 @@ body {
 }
 .send-form__button:hover, .send-form__button:focus {
   background-color: #188CE8;
-}
-
-.card-set {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .instrument {
@@ -1197,15 +1191,7 @@ body {
   background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.footer__information {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  text-align: center;
 }
 
 .footer__adress-area {
@@ -1214,7 +1200,6 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   padding-top: 20px;
-  width: 231px;
 }
 
 .adress__link {
@@ -1239,7 +1224,7 @@ body {
 }
 
 .join-us {
-  padding-left: 70px;
+  text-align: center;
 }
 
 .join-us__title {
@@ -1253,16 +1238,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.subscribe {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-}
-
 .subscribe__field {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1271,8 +1246,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 358px;
-  margin-right: 12px;
 }
 .subscribe__field::-webkit-input-placeholder {
   font-weight: 400;
@@ -1331,13 +1304,13 @@ body {
 }
 
 .subscribe__label {
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 20px;
 }
 
 .subscribe__input {
@@ -1346,6 +1319,7 @@ body {
   background-color: transparent;
   padding: 0;
   padding-left: 16px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
