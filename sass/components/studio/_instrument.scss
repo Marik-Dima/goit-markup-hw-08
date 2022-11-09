@@ -1,22 +1,31 @@
 //cекція инструменти
 .instrument {
-    width: 270px;
-    margin-right: 30px;
 
-    &:last-child {
-        margin-right: 0;
+    width: calc(100% - 2*15px);
+    margin:15px;
+
+    @media screen and (min-width:$tablet) {
+        width: calc((100% - 4*15px)/2);
     }
+
+    @media screen and (min-width:$desktop) {
+        width: calc((100% - 8*15px)/4);
+    }
+
+
+
 }
 
 .instrument__area {
     display: flex;
-    width: 270px;
     height: 120px;
     justify-content: center;
     align-items: center;
     background-color: $calm-button-bg-color;
     border-radius: 4px;
     margin-bottom: 30px;
+
+    
 }
 
 // іконка для інструментів 
@@ -27,6 +36,8 @@
 
 //стиль для заголовків інструментів
 .instrument__title {
+    text-align: center;
+
     margin-top: 0;
     margin-bottom: 10px;
 

@@ -1,4 +1,4 @@
-//картка члена команди
+// //картка члена команди
 .team-member {
     background-color: $primary-white-color;
     text-align: center;
@@ -6,27 +6,36 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-}
 
-//відстань між картками і чистка після останнього елементу
-.team-member {
-    margin-right: 30px;
+    justify-content: center;
+    align-items: center;
+    justify-items:center;
 
-    &:last-child {
-        margin: 0;
+    margin: 15px;
+
+
+    @media screen and (min-width:$tablet){
+        width: calc((100% - 4 * 15px) / 2);   
+    }
+
+    @media screen and (min-width:$desktop) {
+    width: calc((100% - 8 * 15px) / 4);
     }
 }
 
 //опис тіммейта 
 .team-member__description {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
+    @media screen and (min-width:$tablet){
+        padding-bottom: 30px;
+    }
 }
 
 // фото тіммейта
 .team-member__photo {
     display: block;
-
+    width:100%;
 }
 
 //піб тіммейта

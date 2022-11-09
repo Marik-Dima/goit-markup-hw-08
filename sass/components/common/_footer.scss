@@ -2,23 +2,38 @@
 .footer {
     background-color: $secondary-bkg-color;
     padding-top: 60px;
-    padding-bottom: 60px;
-    text-align: center;
-    
-
-
+    padding-bottom: 60px; 
 }
 
 .footer__information {
-    // display: flex;
+    
+    @media screen and(min-width:$tablet) {
+        display: flex;
+        align-items: baseline;
+    }
+
+    @media screen and (min-width:$tablet)and (max-width:$desktop - 1px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    }
 
 
-}
+    }
 
-footer__contacts{
-    // justify-items: center;
-    // text-align: center;
-    // align-items: center;
+
+
+.footer__contacts{
+    text-align: center;
+
+    @media screen and (min-width:$tablet) and (max-width: $desktop - 1px){
+        width: 50%;
+        
+    }
+
+    @media screen and(min-width:$desktop) {
+    text-align: left;
+    width: 231px;
+    }
 }
 
 
@@ -29,7 +44,12 @@ footer__contacts{
     line-height: 1.71;
     letter-spacing: 0.03em;
     padding-top: 20px;
-    // width: 231px;
+    
+    margin-bottom: 60px;
+    @media screen and(min-width:$desktop) {
+            margin-bottom: 0;
+        }
+
 }
 
 
@@ -61,7 +81,10 @@ footer__contacts{
 //відстань між елементами переліку контактів в футері
 .adress__item {
 
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    @media screen and (min-width:$desktop) {
+        margin-bottom: 9px;
+    }
 
     &:last-child {
         margin-bottom: 0;
@@ -71,8 +94,19 @@ footer__contacts{
 //блок приєднуйся до соцмереж у футтері
 //позиціювання контенту в блоці приєднуйтесь
 .join-us {
-    // padding-left: 70px;
+    // 
     text-align: center;
+    @media screen and (max-width:$tablet - 1px){
+        margin-bottom: 60px;
+    }
+    
+    @media screen and (min-width:$tablet) and (max-width: $desktop - 1px) {
+            padding-top: 5px ;
+            width: 50%;
+        }
+    @media screen and (min-width:$desktop){
+        padding-left: 70px;
+    }
 }
 
 //заголовок
@@ -90,8 +124,17 @@ footer__contacts{
 
 // підписка у футері 
 .subscribe {
-    // display: flex;
-    // margin-left: auto;
+    @media screen and (max-width:$desktop - 1px){
+        text-align: center;
+    }
+
+
+
+    @media screen and(min-width:$desktop) {
+            display: flex;
+            margin-left: auto;
+        }
+
 
 }
 
@@ -99,8 +142,15 @@ footer__contacts{
 .subscribe__field {
     display: flex;
     flex-direction: column;
-    // width: 358px;
-    // margin-right: 12px;
+    width: 450px;
+    margin-bottom: 20px;
+
+    @media screen and(min-width:$desktop) {
+        width: 358px;
+        margin-right: 12px;   
+        margin-bottom: 0;     
+    }
+
 
     // плейсхолдер підписки 
     &::placeholder {
@@ -140,7 +190,7 @@ footer__contacts{
     padding: 0;
     padding-left: 16px;
 
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -153,7 +203,8 @@ footer__contacts{
 .subscribe__button {
     @extend %button;
 
-    display: flex;
+    display: inline-flex;
+
     width: 200px;
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

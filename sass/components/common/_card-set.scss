@@ -1,5 +1,14 @@
 //cекція инструменти
 .card-set {
     @extend %list;
-    // display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    // // display: flex;
+    // &__customer{ //секція постійні клієнти
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     margin:-15px;
+    // }
+
 }

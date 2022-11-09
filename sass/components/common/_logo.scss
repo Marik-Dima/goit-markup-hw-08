@@ -6,10 +6,14 @@
 
     font-family: $logo-font, sans-serif;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-decoration: none;
+
+    @media screen and (min-width:$desktop) {
+        font-size: 26px;
+    }
 }
 
 //перша частина лого 

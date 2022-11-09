@@ -1,8 +1,11 @@
 body {
-    color: $primary-text-color;
-    background-color: $primary-white-color;
-    font-family: $main-page-font, sans-serif;
-    font-style: normal;
-    position: relative;
-    padding-top: 80px;
+    @media screen {min-width: 480px;
+        color: $primary-text-color;
+            background-color: $primary-white-color;
+            font-family: $main-page-font, sans-serif;
+            font-style: normal;
+            position: relative;
+            padding-top: 80px;
+    }
+    
 }

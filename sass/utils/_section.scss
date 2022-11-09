@@ -1,10 +1,20 @@
 // загальний опис секцій
 
 .section {
-    padding-top: 94px;
+    
+        padding-top: 60px; //мобільна і планшетна версія
+        padding-bottom: 60px;
+        
+    @media screen and(min-width: $desktop) {
+    padding-top: 94px; //десктопна версія
     padding-bottom: 94px;
+    }
+
 //для секції без паддінгу зверху
     &--no-padding-top {
+            @media screen and (max-width: calc($desktop - 1px)) {
+                    display: none;
+        }
         padding-top: 0;
     }
 //вториннний колір фону для секції
@@ -15,13 +25,19 @@
 }
 
 .section__title {
+    //мобільна та планшетна версія
     margin-top: 0;
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
+    margin-bottom: 30px; 
+    font-size: 24px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    // десктопна версія
+    @media screen and(min-width: $desktop){
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    }
 //ховаємо захоловок
     &--hidden{
             @extend %visually-hidden;

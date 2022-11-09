@@ -15,12 +15,56 @@
 .nav {
     display: flex;
     align-items: center;
+    justify-content:space-between;
 }
+
+.nav__menu {
+    position: absolute;
+    display: none;
+
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 796px;
+    background-color: $primary-white-color;
+
+    &.is-open{
+        display: block;
+    }
+
+
+}
+
+
+
+.mobile-menu-button{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.mobile-menu-button__icon--open{}
+
+.mobile-menu-button__icon--close{
+    display: none;
+}
+
+.mobile-menu-button.is-open .mobile-menu-button__icon--close {
+    display: block;
+}
+
+.mobile-menu-button.is-open .mobile-menu-button__icon--open {
+    display: none;
+}
+
+
 
 .site-nav,
 .cont-nav {
     @extend %list;
-    display: flex;
+    // display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -29,23 +73,27 @@
 
 // встановлюємо відстань між єлементами меню навігації
 .site-nav__item {
-    margin-right: 50px;
+    // margin-right: 50px;//desktop
 
-    &:last-child {
-        margin-right: 0;
-    }
+    // &:last-child {
+    //     margin-right: 0;
+    // }
 }
 
 .site-nav__link {
-    position: relative;
+    
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
 
     color: $primary-text-color;
     text-decoration: none;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width:$tablet) {
+        position: relative;
+    }
 
     //ховер і фокус у навігації
     &:hover,
@@ -56,7 +104,8 @@
     //індикація актикного(поточного) пункту меню(сторінки) у навигації
     &--current {
         color: $accent-color;
-
+        
+        @media screen and (min-width:$tablet) {
         &::after {
             content: '';
             position: absolute;
@@ -69,16 +118,18 @@
             background-color: $accent-color;
         }
     }
+    }
 }
 
 // контакти у хедері
 .cont-nav {
-    margin-left: auto;
-    flex-direction: row;
+    // margin-left: auto;
+    // flex-direction: row;
+
 }
 
 .cont-nav__link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     color: currentColor;
     text-decoration: none;
@@ -95,7 +146,7 @@
 
 .cont-nav__item {
     color: $secondary-text-color;
-    margin-right: 30px;
+    // margin-right: 30px;
 
     &:last-child {
         margin-right: 0;
