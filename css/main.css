@@ -417,7 +417,7 @@ body.modal-open {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  min-width: 320px;
+  min-width: 480px;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -453,6 +453,7 @@ body.modal-open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   .nav {
@@ -635,37 +636,6 @@ body.modal-open {
   fill: currentColor;
 }
 
-.menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  outline: none;
-}
-.menu-toggle__icon-close, .menu-toggle__icon-open {
-  fill: currentColor;
-}
-.menu-toggle:hover, .menu-toggle:focus {
-  color: #2196F3;
-}
-
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-}
 .menu-container {
   position: fixed;
   top: 0;
@@ -686,13 +656,47 @@ body.modal-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
-.menu-container .menu-toggle {
+
+.menu-toggle {
   position: absolute;
   top: 10px;
   right: 15px;
   color: currentColor;
+  min-height: 40px;
+  min-width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.menu-toggle:hover, .menu-toggle:focus {
+  color: #2196F3;
 }
 
+.menu-toggle__icon-open {
+  fill: currentColor;
+}
+
+.menu-toggle__icon-close {
+  fill: currentColor;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
 .mobile-menu {
   display: -webkit-box;
   display: -ms-flexbox;
