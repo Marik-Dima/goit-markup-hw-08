@@ -13,51 +13,99 @@
         <div class="container conteiner__main-nav">            
             <nav class="nav">
                 <a href="./index.html" class="logo"> <span class="logo__first-part">Web</span>Studio</a>
-                <div class="nav__menu" id="nav_menu" data-menu>
-                    <!-- меню навігації в хедері ВЕМ-->
-                    <ul class="site-nav">
-                        <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a></li>
-                        <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфоліо</a></li>
-                        <li class="site-nav__item"><a href="#" class="site-nav__link">Контакти</a></li>
-                    </ul>
-                    <!--контакти в хедері-->
-                    <ul class="cont-nav">
-                        <li class="cont-nav__item">
-                            <a href="mailto:info@devstudio.com" class="cont-nav__link">
-                                <svg class="cont-nav__icon" width="16px" height="16px">
-                                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                                </svg>info@devstudio.com</a>
-                        </li>
-                        <li class="cont-nav__item">
-                            <a href="tel:+380961111111" class="cont-nav__link">
-                                <svg class="cont-nav__icon" width="10px" height="16px">
-                                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                                </svg>+38 096 111 11 11</a>
-                        </li>
-                    </ul>
-                </div>
-                <button 
-                    class="mobile-menu-button" 
-                    data-menu-button
-                    type="button"
-                    aria-label="перемикач мобільного меню"
-                    aria-controls="nav-menu"
-                    aria-expanded="false"
-                    >
-                        <svg width="40px" height="40px">
-                            <use class="mobile-menu-button__icon--open"href="./images/symbol-defs.svg#icon-menu_40px"></use>
-                            <use class="mobile-menu-button__icon--close"href="./images/symbol-defs.svg#icon-close_40px"></use>
-                        </svg>
+                    <div class="nav__menu">
+                        <!-- меню навігації в хедері ВЕМ-->
+                        <ul class="site-nav">
+                            <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a></li>
+                            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфоліо</a></li>
+                            <li class="site-nav__item"><a href="#" class="site-nav__link">Контакти</a></li>
+                        </ul>
+                        <!--контакти в хедері-->
+                        <ul class="cont-nav">
+                            <li class="cont-nav__item">
+                                <a href="mailto:info@devstudio.com" class="cont-nav__link">
+                                    <svg class="cont-nav__icon" width="16px" height="16px">
+                                        <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                                    </svg>info@devstudio.com</a>
+                            </li>
+                            <li class="cont-nav__item">
+                                <a href="tel:+380961111111" class="cont-nav__link">
+                                    <svg class="cont-nav__icon" width="10px" height="16px">
+                                        <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                                    </svg>+38 096 111 11 11</a>
+                            </li>
+                        </ul>
+                    </div>
+                <!-- кнопка відкриття мобільного меню -->
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="40" height="40">
+                        <use class="menu-toggle__icon-open" 
+                        href="./images/symbol-defs.svg#icon-menu_40px">
+                    </use>
+                    </svg>
                 </button>
             </nav>
-
         </div>
     </header>
+    <!-- мобільне меню -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg width="40px" height="40px">
+                <use class="mobile-toggle__icon-close" href="./images/symbol-defs.svg#icon-close_40px">
+                </use>
+            </svg>
+        </button>
+        <ul class="mobile-menu">
+            <!-- мобільна навігація по сайту -->
+            <ul class="site-nav">
+                <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a>
+                </li>
+                <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфоліо</a></li>
+                <li class="site-nav__item"><a href="#" class="site-nav__link">Контакти</a></li>
+            </ul>
+            <!-- контакти у мобільному меню -->
+            <ul class="cont-nav">
+                <li class="cont-nav__item">
+                    <a href="tel:+380961111111" class="cont-nav__link">+38 096 111 11 11</a>
+                </li>
+                <li class="cont-nav__item">
+                    <a href="mailto:info@devstudio.com" class="cont-nav__link">info@devstudio.com</a>
+                </li>
+            </ul>
+            <!-- соціальні мережі в мобільному меню -->
+            <ul class="mobile-menu-social">
+                <li class="mobile-menu-social__item">
+                    <!-- інстаграм -->
+                    <a class="mobile-menu-social__link" href="#" aria-label="Instagram">
+                        Instagram
+                    </a>
+                </li>
+                <li class="mobile-menu-social__item">
+                    <!-- твітер -->
+                    <a class="mobile-menu-social__link" href="#" aria-label="Twitter">
+                        Twitter
+                    </a>
+                </li>
+                <li class="mobile-menu-social__item">
+                    <!-- фейсбук -->
+                    <a class="mobile-menu-social__link" href="#" aria-label="Facebook">
+                        Facebook
+                    </a>
+                </li>
+                <li class="mobile-menu-social__item">
+                    <!-- лінкед ін -->
+                    <a class="mobile-menu-social__link" href="#" aria-label="LinkedIn">
+                        LinkedIn
+                    </a>
+                </li>
+            </ul>
+        </ul>
+    </div>
     <main>
         <!--слоган-головна ідея-кнопка виклику модального вікна з клієнтською формою ВЕМ-->
         <section class="hero">
             <div class="container">
-                <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+                <h1 class="hero__title">Ефективні рішення для<br>вашого бізнесу</h1>
                 <button data-modal-open class="hero__button" type="button">Замовити послугу</button>
                     <!-- модальне вікно замовити послугу -->
                     <div class="backdrop backdrop--hidden" data-modal>
@@ -178,7 +226,6 @@
                     </li>
                 </ul>
             </div>
-
         </section>
         <!--наша команда оптімизовано по ВЕМ-->
         <section class="section section--secondary-bkg">
@@ -514,7 +561,12 @@
             </div>
         </div>
     </footer>
-    <script src="./js/menu.js"></script>
+    <!-- скрипти для мобільного меню -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <!-- скрипт для модального вікна -->
     <script src="./js/modal.js"></script>
 </body>
 </html>

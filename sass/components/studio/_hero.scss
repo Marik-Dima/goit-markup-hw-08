@@ -1,11 +1,14 @@
 //cекція головна ідея
 .hero {
-    width: 480px;
+    width: 100%;
+    max-width: 1600px;
     height: 400px;
     margin-left: auto;
     margin-right: auto;
     background-color: $secondary-bkg-color;
     text-align: center;
+    align-content: center;
+
     padding-top: 118px;
     padding-bottom: 118px;
     background-image: linear-gradient(to right,
@@ -15,6 +18,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+
+
 }
 
 //заголовок головної ідеї
@@ -22,16 +28,18 @@
 .hero__title {
     margin: 0;
     margin-bottom: 30px;
-    // padding:0 200px;
-
     color: $primary-white-color;
     font-weight: 900;
     font-size: 26px; //mobile
-    // font-size: 44px;// desktop
     line-height: 1.364;
     /* если поставить множитель 1.36 - тогда размер блока будет меньше на 2px */
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    hyphens: manual;
+
+    @media screen and (min-width:$desktop) {
+    font-size: 44px;
+    }
 }
 
 

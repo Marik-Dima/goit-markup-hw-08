@@ -9,34 +9,98 @@
 </head>
 <body>
     <header class="header">
-        <!--меню в хедері-->
+    <!--меню в хедері-->
         <div class="container conteiner__main-nav">
-            <!-- меню навігації в хедері ВЕМ-->
-            <nav class="nav">
-                <a href="./index.html" class="logo"> <span class="logo__first-part">Web</span>Studio</a>
+        <nav class="nav">
+            <a href="./index.html" class="logo"> <span class="logo__first-part">Web</span>Studio</a>
+            <div class="nav__menu">
+                <!-- меню навігації в хедері ВЕМ-->
                 <ul class="site-nav">
-                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студія</a></li>
-                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфоліо</a></li>
+                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a>
+                    </li>
+                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфоліо</a></li>
                     <li class="site-nav__item"><a href="#" class="site-nav__link">Контакти</a></li>
                 </ul>
-            </nav>
-            <!--контакти в хедері-->
+                <!--контакти в хедері-->
+                <ul class="cont-nav">
+                    <li class="cont-nav__item">
+                        <a href="mailto:info@devstudio.com" class="cont-nav__link">
+                            <svg class="cont-nav__icon" width="16px" height="16px">
+                                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                            </svg>info@devstudio.com</a>
+                    </li>
+                    <li class="cont-nav__item">
+                        <a href="tel:+380961111111" class="cont-nav__link">
+                            <svg class="cont-nav__icon" width="10px" height="16px">
+                                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                            </svg>+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- кнопка відкриття мобільного меню -->
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="40" height="40">
+                    <use class="menu-toggle__icon-open" href="./images/symbol-defs.svg#icon-menu_40px">
+                    </use>
+                </svg>
+            </button>
+        </nav>
+    </header>
+    <!-- мобільне меню -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg width="40px" height="40px">
+                <use class="mobile-toggle__icon-close" href="./images/symbol-defs.svg#icon-close_40px">
+                </use>
+            </svg>
+        </button>
+        <ul class="mobile-menu">
+            <!-- мобільна навігація по сайту -->
+            <ul class="site-nav">
+                <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студія</a>
+                </li>
+                <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфоліо</a></li>
+                <li class="site-nav__item"><a href="#" class="site-nav__link">Контакти</a></li>
+            </ul>
+            <!-- контакти у мобільному меню -->
             <ul class="cont-nav">
                 <li class="cont-nav__item">
-                    <a href="mailto:info@devstudio.com" class="cont-nav__link">
-                        <svg class="cont-nav__icon" width="16px" height="16px">
-                            <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                        </svg>info@devstudio.com</a>
+                    <a href="tel:+380961111111" class="cont-nav__link">+38 096 111 11 11</a>
                 </li>
                 <li class="cont-nav__item">
-                    <a href="tel:+380961111111" class="cont-nav__link">
-                        <svg class="cont-nav__icon" width="10px" height="16px">
-                            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                        </svg>+38 096 111 11 11</a>
+                    <a href="mailto:info@devstudio.com" class="cont-nav__link">info@devstudio.com</a>
                 </li>
             </ul>
-        </div>
-    </header>
+            <!-- соціальні мережі в мобільному меню -->
+            <ul class="mobile-menu-social">
+                <li class="mobile-menu-social__item">
+                    <!-- інстаграм -->
+                    <a class="mobile-menu-social__link" href="#" aria-label="Instagram">
+                        Instagram
+                    </a>
+                </li>
+                <li class="mobile-menu-social__item">
+                    <!-- твітер -->
+                    <a class="mobile-menu-social__link" href="#" aria-label="Twitter">
+                        Twitter
+                    </a>
+                </li>
+                <li class="mobile-menu-social__item">
+                    <!-- фейсбук -->
+                    <a class="mobile-menu-social__link" href="#" aria-label="Facebook">
+                        Facebook
+                    </a>
+                </li>
+                <li class="mobile-menu-social__item">
+                    <!-- лінкед ін -->
+                    <a class="mobile-menu-social__link" href="#" aria-label="LinkedIn">
+                        LinkedIn
+                    </a>
+                </li>
+            </ul>
+        </ul>
+    </div>
+
     <main>
         <section class="section">
         <div class="container">
@@ -54,7 +118,7 @@
                 <li class="example">
                     <a class="example__link" href="#">
                         <div class="example__pop-up">
-                            <img src="./images/techno_chryak.jpg" class="example__img" alt="ноутбук з Веб-сайтом Технокряк" width="370">
+                            <img src="./images/techno_chryak.jpg" class="example__img" alt="ноутбук з Веб-сайтом Технокряк">
                             <div class="example__overlay">
                                 <p class="example__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                 сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -270,5 +334,10 @@
             </div>
         </div>
     </footer>
+    <!-- скрипти для мобільного меню -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>

@@ -4,6 +4,7 @@
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    min-width: 320px;
 
     @media screen and (min-width:$mobile){
         width: $mobile;
@@ -21,5 +22,6 @@
 
 // модифікатор для головного меню
 .conteiner__main-nav {
+
     // display: flex;
 }

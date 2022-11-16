@@ -5,7 +5,13 @@ body {
             font-family: $main-page-font, sans-serif;
             font-style: normal;
             position: relative;
-            padding-top: 80px;
+            padding-top: 60px;
+            @media screen and(min-width:$tablet) {
+                padding-top: 80px;
+            }
+    }
+    &.modal-open{
+        overflow: hidden;
     }
     
 }
