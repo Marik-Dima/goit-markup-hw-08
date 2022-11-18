@@ -122,7 +122,9 @@
 .example__link {
     text-decoration: none;
     margin: 0;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 // стиль для заголовків прикладів робіт 
@@ -203,10 +205,12 @@
 
 // нижня рамка прикладив робіт
 .example__description {
+
     margin: 0;
     padding: 20px 24px;
     border-bottom: 1px solid $bordering-color;
     border-right: 1px solid $bordering-color;
     border-left: 1px solid $bordering-color;
 
+    flex-grow: 1;
 }
