@@ -1,17 +1,22 @@
 body {
-    @media screen {min-width: 480px;
-        color: $primary-text-color;
-            background-color: $primary-white-color;
-            font-family: $main-page-font, sans-serif;
-            font-style: normal;
-            position: relative;
-            padding-top: 60px;
+
+    color: $primary-text-color;
+    background-color: $primary-white-color;
+    font-family: $main-page-font, sans-serif;
+    font-style: normal;
+    position: relative;
+    padding-top: 60px;
             @media screen and(min-width:$tablet) {
                 padding-top: 80px;
             }
-    }
+    
     &.modal-open{
         overflow: hidden;
     }
-    
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
 }
