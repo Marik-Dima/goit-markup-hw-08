@@ -215,20 +215,35 @@
                 <ul class="card-set">
                     <li class="proposal">
                         <a href=""><img
-                            srcset="./images/proposal/desktop-app-370.jpg 1x, ./images/proposal/desktop-app-370@2x.jpg 2x"
-                            src="./images/proposal/desktop-app-370.jpg" class="proposal__img" alt="створення коду" width="370"></a>
+                            srcset="./images/proposal/desktop-app-370.jpg 1x,
+                                    ./images/proposal/desktop-app-370@2x.jpg 2x"
+                            src="./images/proposal/desktop-app-370.jpg" 
+                            class="proposal__img" 
+                            alt="створення коду" 
+                            width="370">
+                        </a>
                         <h3 class="proposal__title">Десктопні додатки</h3>
                     </li>
                     <li class="proposal">
                         <a href=""><img 
-                            srcset="./images/proposal/mobile-app-370.jpg 1x , ./images/proposal/mobile-app-370@2x.jpg 2x"
-                            src="./images/proposal/mobile-app-370.jpg" class="proposal__img" alt="створення мобільних додатків" width="370"></a>
+                            srcset="./images/proposal/mobile-app-370.jpg 1x ,
+                                    ./images/proposal/mobile-app-370@2x.jpg 2x"
+                            src="./images/proposal/mobile-app-370.jpg" 
+                            class="proposal__img" 
+                            alt="створення мобільних додатків" 
+                            width="370">
+                        </a>
                         <h3 class="proposal__title">Мобільні додатки</h3>
                     </li>
                     <li class="proposal">
                         <a href=""><img 
-                            srcset="./images/proposal/design-370.jpg 1x , ./images/proposal/design-370@2x.jpg 2x"
-                            src="./images/proposal/design-370.jpg" class="proposal__img" alt="розробка дизайну" width="370"></a>
+                            srcset="./images/proposal/design-370.jpg 1x , 
+                                    ./images/proposal/design-370@2x.jpg 2x"
+                            src="./images/proposal/design-370.jpg" 
+                            class="proposal__img" 
+                            alt="розробка дизайну" 
+                            width="370">
+                        </a>
                         <h3 class="proposal__title">Дизайнерські рішення</h3>
                     </li>
                 </ul>
@@ -240,23 +255,22 @@
                 <h2 class="section__title">Наша команда</h2>
                     <ul class="card-set">
                         <li class="team-member">
-                            <img srcset="
-                                        ./images/team-members/igor_demianenko-270.jpg  270w, 
-                                        ./images/team-members/igor_demianenko-354.jpg  354w,  
-                                        ./images/team-members/igor_demianenko-450.jpg  450w, 
-                                        ./images/team-members/igor_demianenko-270@2x.jpg  540w,
-                                        ./images/team-members/igor_demianenko-354@2x.jpg  708w, 
-                                        ./images/team-members/igor_demianenko-450@2x.jpg  900w" 
-                                        sizes="(min-width: 2400px) 22vw,
-                                                (min-width: 1536px) 46vw,
-                                                (min-width: 1200px) 21vw,
-                                                (min-width: 960px) 94vw,
-                                                (min-width: 768px) 45vw,
-                                                (min-width: 480px) 93vw"
-                                        
-                                src="./images/team-members/igor_demianenko-270.jpg" class="team-member__photo" 
-                                
-                                alt="чоловік з бородою в червоній сорочці та окулярах, шатен">
+                            <picture>                           
+                                <source srcset="
+                                                ./images/team-members/igor_demianenko-desktop-270.jpg    1x,
+                                                ./images/team-members/igor_demianenko-desktop-270@2x.jpg 2x
+                                            " media="(min-width: 1200px)" />                           
+                                <source srcset="
+                                                ./images/team-members/igor_demianenko-tablet-354.jpg    1x,
+                                                ./images/team-members/igor_demianenko-tablet-354@2x.jpg 2x
+                                            " media="(min-width: 768px)" />                            
+                                <source srcset="
+                                                ./images/team-members/igor_demianenko-mobile-450.jpg    1x,
+                                                ./images/team-members/igor_demianenko-mobile-450@2x.jpg 2x
+                                            " />
+                                <img class="team-member__photo" src="./images/team-members/igor_demianenko-mobile-450.jpg" 
+                                alt="чоловік з бородою в червоній сорочці та окулярах, шатен" />
+                            </picture>
                                 <div class="team-member__description">
                                     <h3 class="team-member__title">Ігор Дем'яненко</h3>
                                     <p class="team-member__position">Product Designer</p>
@@ -302,23 +316,22 @@
                                 </div>                               
                         </li>
                         <li class="team-member">
-                            <img srcset="
-                                        ./images/team-members/olga_repina-270.jpg  270w, 
-                                        ./images/team-members/olga_repina-354.jpg  354w,  
-                                        ./images/team-members/olga_repina-450.jpg  450w, 
-                                        ./images/team-members/olga_repina-270@2x.jpg  540w,
-                                        ./images/team-members/olga_repina-354@2x.jpg  708w, 
-                                        ./images/team-members/olga_repina-450@2x.jpg  900w" 
-                                        sizes="(min-width: 2400px) 22vw,
-                                                (min-width: 1536px) 46vw,
-                                                (min-width: 1200px) 21vw,
-                                                (min-width: 960px) 94vw,
-                                                (min-width: 768px) 45vw,
-                                                (min-width: 480px) 93vw,
-                                                100vw"
-                                        
-                                src="./images/team-members/olga_repina-270.jpg" class="team-member__photo"
-                                alt="світловолоса, усміхнена, молода жінка в окулярах та піджаку">
+                            <picture>                           
+                                <source srcset="
+                                                ./images/team-members/olga_repina-desktop-270.jpg    1x,
+                                                ./images/team-members/olga_repina-desktop-270@2x.jpg 2x
+                                            " media="(min-width: 1200px)" />                           
+                                <source srcset="
+                                                ./images/team-members/olga_repina-tablet-354.jpg    1x,
+                                                ./images/team-members/olga_repina-tablet-354@2x.jpg 2x
+                                            " media="(min-width: 768px)" />                            
+                                <source srcset="
+                                                ./images/team-members/olga_repina-mobile-450.jpg    1x,
+                                                ./images/team-members/olga_repina-mobile-450@2x.jpg 2x
+                                            " />
+                                <img class="team-member__photo" src="./images/team-members/olga_repina-mobile-450.jpg" 
+                                alt="світловолоса, усміхнена, молода жінка в окулярах та піджаку" />
+                            </picture>
                                 <div class="team-member__description">
                                     <h3 class="team-member__title">Ольга Рєпіна</h3>
                                     <p class="team-member__position">Frontend Developer</p>
@@ -364,23 +377,22 @@
                                 </div>
                                 </li>
                         <li class="team-member">
-                            <img srcset="
-                                        ./images/team-members/mykola_tarasov-270.jpg  270w, 
-                                        ./images/team-members/mykola_tarasov-354.jpg  354w,  
-                                        ./images/team-members/mykola_tarasov-450.jpg  450w, 
-                                        ./images/team-members/mykola_tarasov-270@2x.jpg  540w,
-                                        ./images/team-members/mykola_tarasov-354@2x.jpg  708w, 
-                                        ./images/team-members/mykola_tarasov-450@2x.jpg  900w" 
-                                        sizes="(min-width: 2400px) 22vw,
-                                                (min-width: 1536px) 46vw,
-                                                (min-width: 1200px) 21vw,
-                                                (min-width: 960px) 94vw,
-                                                (min-width: 768px) 45vw,
-                                                (min-width: 480px) 93vw,
-                                                100vw"
-                                        
-                                src="./images/team-members/mykola_tarasov-270.jpg" class="team-member__photo"
-                                alt="молодий чоловік в світлоблакитній сорочці з відкритою посмішкою">
+                            <picture>                           
+                                <source srcset="
+                                                ./images/team-members/mykola_tarasov-desktop-270.jpg    1x,
+                                                ./images/team-members/mykola_tarasov-desktop-270@2x.jpg 2x
+                                            " media="(min-width: 1200px)" />                           
+                                <source srcset="
+                                                ./images/team-members/mykola_tarasov-tablet-354.jpg    1x,
+                                                ./images/team-members/mykola_tarasov-tablet-354@2x.jpg 2x
+                                            " media="(min-width: 768px)" />                            
+                                <source srcset="
+                                                ./images/team-members/mykola_tarasov-mobile-450.jpg    1x,
+                                                ./images/team-members/mykola_tarasov-mobile-450@2x.jpg 2x
+                                            " />
+                                <img class="team-member__photo" src="./images/team-members/mykola_tarasov-mobile-450.jpg" 
+                                alt="молодий чоловік в світлоблакитній сорочці з відкритою посмішкою" />
+                            </picture>
                                 <div class="team-member__description">
                                     <h3 class="team-member__title">Микола Тарасов</h3>
                                     <p class="team-member__position">Marketing</p>
@@ -426,22 +438,22 @@
                                 </div>
                         </li>
                         <li class="team-member">
-                            <img srcset="
-                                        ./images/team-members/michael_yermakov-270.jpg  270w, 
-                                        ./images/team-members/michael_yermakov-354.jpg  354w,  
-                                        ./images/team-members/michael_yermakov-450.jpg  450w, 
-                                        ./images/team-members/michael_yermakov-270@2x.jpg  540w,
-                                        ./images/team-members/michael_yermakov-354@2x.jpg  708w, 
-                                        ./images/team-members/michael_yermakov-450@2x.jpg  900w" sizes="(min-width: 2400px) 22vw,
-                                                (min-width: 1536px) 46vw,
-                                                (min-width: 1200px) 21vw,
-                                                (min-width: 960px) 94vw,
-                                                (min-width: 768px) 45vw,
-                                                (min-width: 480px) 93vw,
-                                                100vw" 
-                                src="./images/team-members/michael_yermakov-270.jpg"
-                                class="team-member__photo"
-                                alt="молодий чоловік з татуюванням на правій руці в чорній футболці та чорних окулярах" >
+                            <picture>                           
+                                <source srcset="
+                                                ./images/team-members/michael_yermakov-desktop-270.jpg    1x,
+                                                ./images/team-members/michael_yermakov-desktop-270@2x.jpg 2x
+                                            " media="(min-width: 1200px)" />                           
+                                <source srcset="
+                                                ./images/team-members/michael_yermakov-tablet-354.jpg    1x,
+                                                ./images/team-members/michael_yermakov-tablet-354@2x.jpg 2x
+                                            " media="(min-width: 768px)" />                            
+                                <source srcset="
+                                                ./images/team-members/michael_yermakov-mobile-450.jpg    1x,
+                                                ./images/team-members/michael_yermakov-mobile-450@2x.jpg 2x
+                                            " />
+                                <img class="team-member__photo" src="./images/team-members/michael_yermakov-mobile-450.jpg" 
+                                alt="молодий чоловік з татуюванням на правій руці в чорній футболці та чорних окулярах" />
+                            </picture>
                                 <div class="team-member__description">
                                     <h3 class="team-member__title">Михайло Єрмаков</h3>
                                     <p class="team-member__position">UI Designer</p>

@@ -36,7 +36,10 @@
 
 //стиль для заголовків інструментів
 .instrument__title {
-    text-align: center;
+    @media screen and(max-width:calc($tablet - 1px)) {
+            text-align: center;
+    }
+
 
     margin-top: 0;
     margin-bottom: 10px;
