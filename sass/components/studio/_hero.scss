@@ -1,6 +1,6 @@
 //cекція головна ідея
 .hero {
-    width: 480px;
+    width: 100%;
     max-width: 1600px;
     height: 400px;
     margin-left: auto;
@@ -19,6 +19,17 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    @media screen and(min-width:$mobile){
+        width: $mobile;
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url(../images/hero/hero-480@2x.jpg)
+            }
+    }
     @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx){

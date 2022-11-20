@@ -143,8 +143,12 @@
 .subscribe__field {
     display: flex;
     flex-direction: column;
-    width: 450px;
+    width: 100%;
     margin-bottom: 20px;
+
+    @media screen and(min-width:$mobile){
+        width: 450px;
+    }
 
     @media screen and(min-width:$desktop) {
         width: 358px;
