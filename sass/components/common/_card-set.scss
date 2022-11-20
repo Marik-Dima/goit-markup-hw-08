@@ -1,12 +1,14 @@
 //cекція инструменти
 .card-set {
     @extend %list;
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     margin: -15px;
+    @media screen and(min-width:480px){
+        display:flex;
+        
+    }
 
-    &__customer{ //секція постійні клієнти
-    margin: auto;
-    // }
+
 
 }

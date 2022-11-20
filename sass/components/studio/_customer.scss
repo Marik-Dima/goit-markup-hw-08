@@ -1,7 +1,12 @@
 //стилі для постійних клієнтів 
 
 .customer {
-    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+margin:15px;
+        
 }
 
 .customer__name {
@@ -16,8 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    width: 210px;
+    width: 210px ;
     height: 92px;
     
     @media screen and (min-width: $tablet){

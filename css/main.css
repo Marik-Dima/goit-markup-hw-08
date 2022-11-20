@@ -313,6 +313,7 @@ summary {
   /* Legacy iOS */
 }
 body {
+  min-width: 320px;
   color: #212121;
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -1165,12 +1166,17 @@ img {
 }
 
 .card-set {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: -15px;
+}
+@media screen and (min-width: 480px) {
+  .card-set {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .instrument {
@@ -1282,7 +1288,11 @@ img {
           align-items: center;
   justify-items: center;
   margin: 15px;
-  width: 450px;
+}
+@media screen and (min-width: 480px) {
+  .team-member {
+    width: calc(100% - 30px);
+  }
 }
 @media screen and (min-width: 768px) {
   .team-member {
@@ -1377,6 +1387,15 @@ img {
 }
 
 .customer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 15px;
 }
 
@@ -1740,7 +1759,6 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 480px) {

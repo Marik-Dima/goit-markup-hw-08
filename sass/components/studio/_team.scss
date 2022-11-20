@@ -12,7 +12,11 @@
     justify-items:center;
 
     margin: 15px;
-    width: 450px;
+    
+
+    @media screen and (min-width:$mobile){
+        width: calc(100% - 2 * 15px)
+    }
 
 
     @media screen and (min-width:$tablet){
